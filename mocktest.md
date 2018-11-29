@@ -53,11 +53,12 @@
 	- [ ] Block
 	- [ ] Layout
 	- [ ] List
+
 10. Which HTML5 input type allows a user to select a year and week
-	- [x] Input type = “ yearandweek”
-	- [ ] Input type = “ weekandyear”
+	- [ ] Input type = “yearandweek”
+	- [ ] Input type = “weekandyear”
 	- [ ] Input type = “weekyear”
-	- [ ] Input type = “week”(correct)
+	- [x] Input type = “week”
 
 11. What type the input field has to be to contain email address
 	- [x] Email
@@ -163,7 +164,7 @@
 	- [ ] &lt;dd&gt;
 	- [ ] &lt;br&gt;
 	- [ ] &lt;b&gt;
-	- [ ] &lt;big&gt;
+	- [x] &lt;big&gt;
 
 30. Out of following options, which is new element in HTML5?
 	- [x] &lt;noframes&gt;
