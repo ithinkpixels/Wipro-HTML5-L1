@@ -15,7 +15,6 @@
 | Total No. of questions | 20                |                                              4 |
 
 ## Assignment 1:
----
 1.Create a HTML5 web page which is used for a Stock Trading App
 
 #### Requirements:
@@ -25,7 +24,6 @@
 
 
 ## Assignment 2:
----
 1. Create a Web Page for an Event Management Company "Xena Events" which is conducting a hot balloon riding event from Feb 28th 2017 onwards for 5 days.
 
 #### Requirements:
@@ -40,7 +38,6 @@ _Note: All entries are "mandatory"._
 
 
 ## Assignment 3:
----
 1. Create a Web Page with two horizontal sections.
 
 #### Requirements:
@@ -50,8 +47,8 @@ _Note: All entries are "mandatory"._
 
 
 ## Assignment 4:
----
 1. For the BCCI (Board of Control for Cricket in India) web page, we need to show a line chart for the batting statistics of the Indian team for a T20 cricket match. The details are as follows:
+
 | OVER | Runs |
 |:----:|:----:|
 | 5    | 40   |
