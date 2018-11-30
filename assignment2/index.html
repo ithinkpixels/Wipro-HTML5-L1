@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Trend.NXT HTML5 :: L1 :: Assignment 2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            body {
+                padding: 50px;
+                border-radius: 25px;
+                border: 3px solid #3297B7;
+                min-height: calc(100vh - 122px);
+            }
+            .logo {
+                width: 50vw;
+                margin: 0 auto;
+                overflow: hidden;
+            }
+            .eventform {
+                max-width: 80%;
+                margin: 50px auto 0;
+                display: flex;
+                flex-direction: column;
+            }
+            .eventform img {
+                width: 100%;
+                border-radius: 15px;
+            }
+            .eventform form {
+                margin: 20px 0;
+                width: 100%;
+            }
+            .eventform form label {
+                display: block;
+                margin-bottom: .5rem;
+                font-family: sans-serif;
+                font-weight: 900;
+                text-transform: uppercase;
+                font-size: .8rem;
+            }
+            .eventform form input {
+                display: block;
+                font-family: sans-serif;
+                width: calc(100% - 22px);
+                height: calc(2rem);
+                padding: .375rem 10px;
+                margin-bottom: 1rem;
+                font-size: 1rem;
+                line-height: 1.5;
+                color: #495057;
+                background-color: #fff;
+                background-clip: padding-box;
+                border: 1px solid #ced4da;
+                border-radius: .25rem;
+                transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+            }
+            .eventform form input[type="submit"] {
+                background-color: #3297B7;
+                color: #fff;
+                font-weight: 700;
+                text-transform: uppercase;
+                line-height: inherit;
+                border: none;
+                display: inline-block;
+                width: 50%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="logo">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 348 74" style="enable-background:new 0 0 348 74;" xml:space="preserve">
+            <style type="text/css">
+                .st0{fill:#3297B7;}
+            </style>
+            <g>
+                <polygon class="st0" points="0,38.76 14.91,24.85 25.84,71.57 13.92,71.57 	"/>
+                <polygon class="st0" points="26.84,68.58 36.78,68.58 33.79,5.96 14.91,16.9 	"/>
+                <polygon class="st0" points="38.76,73.55 46.72,73.55 56.66,0 35.78,8.95 	"/>
+            </g>
+            <g>
+                <path d="M72.52,50.3l-10.1,17.3h-2.18l11.27-18.98L60.85,30.37h2.23l9.43,16.47l9.43-16.47h2.23l-10.66,18.2L84.8,67.6h-2.18
+                    L72.52,50.3z"/>
+                <path d="M90.16,30.37h17.25v1.67H91.95v15.57h15.07v1.67H91.95v16.63h15.46v1.67H90.16V30.37z"/>
+                <path d="M116.73,34.39V67.6h-1.79V30.37h1.79l17.81,32.88V30.37h1.79V67.6h-1.79L116.73,34.39z"/>
+                <path d="M161.44,57.61h-14.79l-2.96,9.99h-1.95l11.22-37.23h2.12l11.27,37.23h-1.95L161.44,57.61z M147.1,55.94h13.84l-6.92-23.22
+                    L147.1,55.94z"/>
+                <path d="M169.93,30.37h23.5v8.99h-12.95v4.91h12.56v8.99h-12.56v5.36h12.95v8.99h-23.5V30.37z"/>
+                <path d="M194.54,30.37h11.44l5.92,24.89l5.86-24.89h11.44L218.27,67.6h-12.78L194.54,30.37z"/>
+                <path d="M231.22,30.37h23.5v8.99h-12.95v4.91h12.56v8.99h-12.56v5.36h12.95v8.99h-23.5V30.37z"/>
+                <path d="M269.62,48.46V67.6h-10.44V30.37h10.72l9.32,18.03V30.37h10.38V67.6h-9.99L269.62,48.46z"/>
+                <path d="M300.99,39.58h-7.7v-9.21h25.95v9.21h-7.65V67.6h-10.61L300.99,39.58L300.99,39.58z"/>
+                <path d="M324.83,55.27c2.23,2.34,5.64,3.91,9.15,3.91c2.01,0,3.52-0.89,3.52-2.29c0-1.62-1.67-2.51-4.63-3.46
+                    c-4.8-1.56-11.83-3.52-11.83-11.83c0-6.08,4.69-11.83,13.84-11.83c4.91,0,9.38,1.51,12.67,4.3l-4.8,7.81
+                    c-2.46-2.07-5.47-3.01-7.87-3.01c-2.34,0-3.07,1-3.07,2.12c0,1.56,1.62,2.34,4.74,3.35c4.8,1.56,11.61,3.8,11.61,11.55
+                    c0,7.59-5.36,12.39-14.01,12.39c-6.42,0-10.88-1.84-14.23-4.97L324.83,55.27z"/>
+            </g>
+            </svg>
+        </div>
+
+        <div class="eventform">
+            <img src="hot-air-balloons-sky.jpg" alt="Hot Air Balloon Event">
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Name" pattern="[A-Za-z]" required>
+
+                <label for="age">Age</label>
+                <input type="number" id="age" placeholder="Age" min="18" required>
+
+                <label for="email">Email ID</label>
+                <input type="email" id="email" placeholder="Email ID" required>
+
+                <label for="city">City</label>
+                <input type="text" id="city" placeholder="City" list="cities" required>
+
+                <datalist id="cities">
+                    <option value="Bangalore">
+                    <option value="Rajkot">
+                    <option value="Vijag">
+                </datalist>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+    </body>
+</html>
