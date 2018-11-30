@@ -30,10 +30,10 @@
 The Web Page should have the below:
 * Heading with appropriate name and logo.
 *  A form where people can register for this event with the below details:
-a. Name : should allow only alphabets.
-b. Age : should be equal to or greater than 18.
-c. Email ID : should be a valid email id format
-d. City: On clicking on the text box, Should display a list that contains city names as "Rajkot", "Vizag" and "Bangalore" but whatever the user enters also should be shown in the list
+    - Name : should allow only alphabets.
+    - Age : should be equal to or greater than 18.
+    - Email ID : should be a valid email id format
+    - City: On clicking on the text box, Should display a list that contains city names as "Rajkot", "Vizag" and "Bangalore" but whatever the user enters also should be shown in the list
 _Note: All entries are "mandatory"._
 
 
