@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Trend.NXT HTML5 :: L1 :: Assignment 4</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            body {
+                text-align: center;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            canvas {
+                border: 2px solid #d1d1d1;
+                border-radius: 10px;
+                padding: 20px;
+                background-color: #f1f1f1
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Board of Control for Cricket in India</h1>
+        <h3>T20 Cricket Match Statistics</h3>
+
+        <canvas id="bcci" width="500" height="400">Your browser does not support the HTML5 canvas tag.</canvas>
+
+        <script>
+            var c = document.getElementById('bcci');
+            var ctx = c.getContext('2d');
+
+            ctx.font = '15px Arial';
+            ctx.lineWidth = 1.5;
+
+            // build the graph
+            ctx.beginPath();
+            ctx.moveTo(140,370);
+            ctx.lineTo(140,0);
+            ctx.moveTo(240,370);
+            ctx.lineTo(240,0);
+            ctx.moveTo(340,370);
+            ctx.lineTo(340,0);
+            ctx.moveTo(440,370);
+            ctx.lineTo(440,0);
+            ctx.moveTo(40,315);
+            ctx.lineTo(500,315);
+            ctx.moveTo(40,265);
+            ctx.lineTo(500,265);
+            ctx.moveTo(40,215);
+            ctx.lineTo(500,215);
+            ctx.moveTo(40,165);
+            ctx.lineTo(500,165);
+            ctx.moveTo(40,115);
+            ctx.lineTo(500,115);
+            ctx.moveTo(40,65);
+            ctx.lineTo(500,65);
+            ctx.moveTo(40,15);
+            ctx.lineTo(500,15);
+            ctx.strokeStyle = '#ccc';
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.moveTo(40,400);
+            ctx.lineTo(40,0);
+            ctx.moveTo(0,370);
+            ctx.lineTo(500,370);
+            ctx.strokeStyle = '#000';
+            ctx.stroke();
+
+            // build out the numbers for both directions of the chart
+            ctx.strokeText('280',0,20);
+            ctx.strokeText('240',0,70);
+            ctx.strokeText('200',0,120);
+            ctx.strokeText('160',0,170);
+            ctx.strokeText('120',0,220);
+            ctx.strokeText('80',8,270);
+            ctx.strokeText('40',8,320);
+
+            ctx.strokeText('0',16,395);
+            ctx.strokeText('5',136,395);
+            ctx.strokeText('10',231,395);
+            ctx.strokeText('15',332,395);
+            ctx.strokeText('20',431,395);
+
+            // axis lables
+            ctx.beginPath();
+            ctx.font = 'bold 11px Arial';
+            ctx.fillStyle = '#3297B7';
+            ctx.fillText('RUNS ^',50,10);
+            ctx.fillText('OVERS >',450,360);
+
+            // plot the points and draw the lines
+            ctx.beginPath();
+            ctx.strokeStyle = '#3297B7';
+            ctx.arc(140,315,2,0,2*Math.PI); // over 5 - runs 40
+            ctx.arc(240,275,2,0,2*Math.PI); // over 10 - runs 75
+            ctx.arc(340,190,2,0,2*Math.PI); // over 15 - runs 140
+            ctx.arc(440,82,2,0,2*Math.PI); // over 20 - runs 225
+            ctx.stroke();
+        </script>
+
+    </body>
+</html>
