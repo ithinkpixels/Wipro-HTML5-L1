@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Trend.NXT HTML5 :: L1 :: Assignment 3</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            svg { width: 50%; }
+            h1 {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: #3297B7;
+                font-size: 6vw;
+                margin-top: 0;
+            }
+
+            #sectionA, #sectionB {
+                margin: 0 auto;
+                text-align: center;
+            }
+            video {
+                display: block;
+                margin: 20px auto;
+                width: 100%;
+                max-width: 480px;
+            }
+            button {
+                background: #3297B7;
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: 700;
+                padding: 15px;
+                border-radius: 8px;
+                margin: 0 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="sectionA" class="logo">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 670 203" style="enable-background:new 0 0 670 203;" xml:space="preserve">
+            <style type="text/css">
+                .st0{fill:#444444;}
+                .st1{fill:#FFFFFF;}
+            </style>
+            <g>
+                <g>
+                    <rect x="0.33" y="-0.4" class="st0" width="203" height="203"/>
+                </g>
+                <g>
+                    <path class="st1" d="M76.38,36.44h50.91l49.3,129.32h-57.52l-4.47-16.97H84.95l-5,16.97H27.08L76.38,36.44z M106.03,116.29
+                        l-5.72-26.26h-0.36l-5.72,26.26H106.03z"/>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <rect x="233.48" y="-0.4" class="st0" width="203" height="203"/>
+                </g>
+                <g>
+                    <path class="st1" d="M334.98,34.48c40.55,0,72.16,29.11,72.16,66.62c0,37.51-31.62,66.63-72.16,66.63s-72.16-29.12-72.16-66.63
+                        C262.82,63.59,294.43,34.48,334.98,34.48z M334.98,122c11.07,0,20.01-8.93,20.01-20.01c0-11.07-8.93-20.01-20.01-20.01
+                        s-20.01,8.93-20.01,20.01C314.97,113.07,323.9,122,334.98,122z"/>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <rect x="466.62" y="-0.4" class="st0" width="203" height="203"/>
+                </g>
+                <g>
+                    <path class="st1" d="M493.46,36.44h57.52l19.11,68.59h0.36l20.36-68.59h51.98l-49.48,129.32h-50.37L493.46,36.44z"/>
+                </g>
+            </g>
+            </svg>
+            <h1>Awesome Online Videos</h1>
+        </div>
+
+        <div id="sectionB" class="video">
+            <video id="video" width="480">
+                <source src="vidoftheweek.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <button onclick="play()">Play Video</button>
+            <button onclick="pause()">Pause Video</button>
+        </div>
+    </body>
+
+    <script>
+        var video = document.getElementById('video');
+        function play() {
+            video.play();
+        }
+
+        function pause() {
+            video.pause();
+        }
+    </script>
+</html>
