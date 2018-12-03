@@ -15,7 +15,7 @@
 | Total No. of questions | 20                |                                              4 |
 
 ## Assignment 1:
-1.Create a HTML5 web page which is used for a Stock Trading App
+1. Create a HTML5 web page which is used for a Stock Trading App
 
 #### Requirements:
 * The stock ticker symbol and price as below should be displayed in a table format
