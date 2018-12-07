@@ -55,7 +55,7 @@
             ctx.lineTo(500,65);
             ctx.moveTo(40,15);
             ctx.lineTo(500,15);
-            ctx.strokeStyle = '#ccc';
+            ctx.strokeStyle = '#cccccc';
             ctx.stroke();
 
             ctx.beginPath();
@@ -63,7 +63,7 @@
             ctx.lineTo(40,0);
             ctx.moveTo(0,370);
             ctx.lineTo(500,370);
-            ctx.strokeStyle = '#000';
+            ctx.strokeStyle = '#000000';
             ctx.stroke();
 
             // build out the numbers for both directions of the chart
@@ -84,13 +84,13 @@
             // axis lables
             ctx.beginPath();
             ctx.font = 'bold 11px Arial';
-            ctx.fillStyle = '#3297B7';
+            ctx.fillStyle = '#3297b7';
             ctx.fillText('RUNS ^',50,10);
             ctx.fillText('OVERS >',450,360);
 
             // plot the points and draw the lines
             ctx.beginPath();
-            ctx.strokeStyle = '#3297B7';
+            ctx.strokeStyle = '#3297b7';
             ctx.arc(140,315,2,0,2*Math.PI); // over 5 - runs 40
             ctx.arc(240,275,2,0,2*Math.PI); // over 10 - runs 75
             ctx.arc(340,190,2,0,2*Math.PI); // over 15 - runs 140
